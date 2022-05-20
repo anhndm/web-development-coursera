@@ -1,0 +1,61 @@
+html {
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'EB Garamond', serif;
+    box-sizing: border-box;
+}
+
+.container-title {
+    background-color: #BBDEFB;
+    width: auto;
+}
+
+.description {
+    padding: 10px 10% ;
+    text-align: center;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+.container-top {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.logo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: auto;
+}
+
+.button {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    margin: auto;
+}
+
+.top {
+    position: relative;
+}
+
+.wrapper {
+    position: absolute;
+}
+
+.container-fluid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.col1, .col2, .col3 {
+    float: left;
+}
