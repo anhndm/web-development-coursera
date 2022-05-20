@@ -1,55 +1,47 @@
+html {
+  background-color: #fafafa;
+}
+
 body {
     padding: 0;
     margin: 0;
     font-size: 16px;
+    /* box-sizing: border-box; */
+}
+
+.col-lg-4, .col-lg-6 ,.col-lg-12 {
+    float: left;
+    background-color: #c7c7c7;
+    border: 1px solid black;
+    padding: 0 15px 0 15px;
+    position: relative;
     box-sizing: border-box;
+    margin: 15px;
 }
 
-/* desktop view */
+/* ----------------------desktop view ---------------------------*/
 @media (min-width: 992px) {
-    .col-lg-4, .col-lg-6 ,.col-lg-12 {
-      float: left;
-      background-color: grey;
-      border: 1px solid black;
-      padding: 0 15px 0 15px;
-      position: relative;
-
-    }
-    .col-lg-4 {
-      width: 33.33%;
-  }
+  .col-lg-4 {
+    width: calc(33.333% - 30px);
 }
-  
-/* tablet view */
-@media (min-width: 991px) and (max-width: 768px) {
-    .col-md-4, .col-md-6 ,.col-md-12 {
-        float: left;
-        background-color: grey;
-        border: 1px solid black;
-        padding: 0 15px 0 0;
+}
 
-
-      }
+/* ----------------------tablet view ---------------------------*/
+@media (max-width: 992px) and (min-width: 767px) {
       .col-md-6 {
-        width: 50%;
+        width: calc(50% - 30px);
+      }
+      .col-md-12 {
+        width: calc(100% - 30px);
       }
   }
 
-/* mobile view */
+/* ------------------mobile view --------------------------*/
 @media (max-width: 767px) {
-    .col-sm-4, .col-sm-6 ,.col-sm-12 {
-        float: left;
-        background-color: grey;
-        border: 1px solid black;
-        padding: 0 15px 0 15px;
-
-
-      }
       .col-sm-12 {
-        width: 100%;
+        width: calc(100% - 30px);
       }
   }
-
 
 .title {
     font-family: 'EB Garamond', serif;
@@ -57,31 +49,37 @@ body {
     font-weight: bold;
     text-align: center;
     position: relative;
+    margin: 30px
 }
 
 #chicken, #beef, #sushi {
     position: absolute;
+    float: right;
+    top: 0;
     right: 0;
     width: 100px;
     font-family: 'EB Garamond', serif;
     font-size: 125%;
     font-weight: 600;
     text-align: center;
-}
+  }
 
 #chicken {
-    background-color: pink;
+    background-color: #005b4f;
+    color: whitesmoke
 }
 
 #beef {
-    background-color: brown;
+    background-color: #ba000d;
     color: whitesmoke
 }
 
 #sushi {
-    background-color: burlywood;
+    background-color: #004373;
+    color: whitesmoke
+
 }
 
 p {
-    clear: both;
+    margin-top: 30px;
 }
